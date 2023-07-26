@@ -3,6 +3,7 @@ package com.example.helloworld;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,8 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String helloWorld = "hello world";
 
-        System.out.println("hello world");
     }
+
+    public void disable(View v){
+        v.setEnabled(false);
+    }
+
 }
